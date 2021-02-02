@@ -1,22 +1,5 @@
 <?php
-/**
- * Events module
- *
- * You may not change or alter any portion of this comment or credits
- * of supporting developers from this source code or any supporting source code
- * which is considered copyrighted (c) material of the original comment or credit authors.
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
- *
- * @copyright  The XOOPS Project http://sourceforge.net/projects/xoops/
- * @license    http://www.fsf.org/copyleft/gpl.html GNU public license
- * @package    Events
- * @since      2.5
- * @author     tad
- * @version    $Id $
- **/
-
+xoops_loadLanguage('main', 'tadtools');
 define('_TAD_NEED_TADTOOLS', ' 需要 tadtools 模組，可至<a href="http://www.tad0616.net/modules/tad_uploader/index.php?of_cat_sn=50" target="_blank">Tad教材網</a>下載。');
 define('_MD_TAD_TIMELINE_SMNAME1', '重要紀事');
 define('_MD_TAD_TIMELINE_EDIT', '管理重要紀事');
@@ -41,3 +24,4 @@ define('_MD_TAD_TIMELINE_LIST_MODE', '列表模式');
 define('_MD_TAD_TIMELINE_TIMELINE_MODE', '時間軸模式');
 
 define('_MD_TAD_TIMELINE_EMPTY', '尚無資料');
+define('_MD_TAD_TIMELINE_JSON_ERROR', 'json 寫入失敗（請檢查是否有寫入權限）');

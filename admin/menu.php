@@ -9,37 +9,36 @@
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  *
- * @copyright  The XOOPS Project http://sourceforge.net/projects/xoops/
+ * @copyright  XOOPS Project (https://xoops.org)
  * @license    http://www.fsf.org/copyleft/gpl.html GNU public license
  * @package    Events
  * @since      2.5
  * @author     tad
  * @version    $Id $
  **/
-
-$adminmenu = array();
-$i         = 1;
-$icon_dir  = substr(XOOPS_VERSION, 6, 3) == '2.6' ? "" : "images/admin/";
+$adminmenu = [];
+$i = 1;
+$icon_dir = '2.6' === mb_substr(XOOPS_VERSION, 6, 3) ? '' : 'images/admin/';
 
 $adminmenu[$i]['title'] = _MI_TAD_ADMIN_HOME;
-$adminmenu[$i]['link']  = 'admin/index.php';
-$adminmenu[$i]['desc']  = _MI_TAD_ADMIN_HOME_DESC;
-$adminmenu[$i]['icon']  = 'images/admin/home.png';
+$adminmenu[$i]['link'] = 'admin/index.php';
+$adminmenu[$i]['desc'] = _MI_TAD_ADMIN_HOME_DESC;
+$adminmenu[$i]['icon'] = 'images/admin/home.png';
 
 $i++;
 $adminmenu[$i]['title'] = _MI_TAD_TIMELINE_ADMENU1;
-$adminmenu[$i]['link']  = 'admin/main.php';
-$adminmenu[$i]['desc']  = _MI_TAD_TIMELINE_ADMENU1_DESC;
-$adminmenu[$i]['icon']  = "{$icon_dir}button.png";
+$adminmenu[$i]['link'] = 'admin/main.php';
+$adminmenu[$i]['desc'] = _MI_TAD_TIMELINE_ADMENU1_DESC;
+$adminmenu[$i]['icon'] = "{$icon_dir}timeline.png";
 
 $i++;
 $adminmenu[$i]['title'] = _MI_TADTIMELI_GROUPPERM;
-$adminmenu[$i]['link']  = 'admin/groupperm.php';
-$adminmenu[$i]['desc']  = _MI_TADTIMELI_GROUPPERM_DESC;
-$adminmenu[$i]['icon']  = "{$icon_dir}button.png";
+$adminmenu[$i]['link'] = 'admin/groupperm.php';
+$adminmenu[$i]['desc'] = _MI_TADTIMELI_GROUPPERM_DESC;
+$adminmenu[$i]['icon'] = "{$icon_dir}keys.png";
 
 $i++;
 $adminmenu[$i]['title'] = _MI_TAD_ADMIN_ABOUT;
-$adminmenu[$i]['link']  = 'admin/about.php';
-$adminmenu[$i]['desc']  = _MI_TAD_ADMIN_ABOUT_DESC;
-$adminmenu[$i]['icon']  = 'images/admin/about.png';
+$adminmenu[$i]['link'] = 'admin/about.php';
+$adminmenu[$i]['desc'] = _MI_TAD_ADMIN_ABOUT_DESC;
+$adminmenu[$i]['icon'] = 'images/admin/about.png';
